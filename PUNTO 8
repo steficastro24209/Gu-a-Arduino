@@ -1,1 +1,20 @@
+//Punto 8
+//https://www.youtube.com/watch?v=KqeFrUZMEfE
+int potPin = A0;
+int ledPin = 7;
 
+void setup() {
+  pinMode(ledPin, OUTPUT);//Configurar el pin 
+}
+
+void loop() {
+  int potValue = analogRead(potPin);
+
+  if (potValue > (4 * 1023 / 5)) { 
+    digitalWrite(ledPin, HIGH); 
+  } else {
+    digitalWrite(ledPin, LOW);//Apagar el Led
+  }
+
+  delay(100);
+}
