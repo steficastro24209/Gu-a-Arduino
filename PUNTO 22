@@ -1,1 +1,41 @@
+//Punto 22
+int greenPin=13;
+int bluePin=12;
+int redPin=7;
+void setup() {
+  //Programar Leds
+  pinMode(greenPin,OUTPUT);
+  pinMode(bluePin,OUTPUT);
+  pinMode(redPin,OUTPUT);
 
+
+}
+void loop() {
+ //rosa 
+ analogWrite(7,255);
+ analogWrite(12,197);
+ analogWrite(13,211);
+ delay(1000);
+ //Led azul
+ analogWrite(7,199);
+ analogWrite(12,158);
+ analogWrite(13,203);
+ delay(1000);
+ //Led morado
+ analogWrite(7,195);
+ analogWrite(12,177);
+ analogWrite(13,255);
+ delay(1000);
+ //Led verde
+ analogWrite(9,176);
+ analogWrite(11,242);
+ analogWrite(10,194);
+ delay(1000);
+ //Led amarillo
+ analogWrite(9,253);
+ analogWrite(11,253);
+ analogWrite(10,150);
+ delay(1000);
+
+
+}
