@@ -1,21 +1,15 @@
-/Punto 2/
-/https://www.youtube.com/watch?v=LQyZqAaw5zE/ 
-int led=11; /Conectar al pin 11/
-int led2=10;/ Conectar al pin 10/
-int led3=9; / Conectar al pin 9/
-int dt=100;/Tiempo de espera/
+// punto 1//
+//https://www.youtube.com/watch?v=RGeRt5MnFT8//
+int Led=12;//Conectar led al pin 12//
 void setup() {
-  /Configurar los pines/
-  pinMode(led,OUTPUT);
-  pinMode(led2,OUTPUT);
-  pinMode(led3,OUTPUT);
+  
+pinMode(12,OUTPUT); //Configurar los pines//
 }
 
-void loop() {
-  /Envio de señal o de corriente para encender/
-    digitalWrite(led,HIGH); 
-    digitalWrite(led2,HIGH);
-    digitalWrite(led3,HIGH);
-  ;
-
+void loop(){
+  digitalWrite(12,HIGH); //Se enciende el Led//
+  delay(100);
+  
+  digitalWrite(12,LOW); //Se apaga el Led//
+  delay(100);
 }
