@@ -1,1 +1,13 @@
+//Punto 6
+//https://www.youtube.com/watch?v=FoNuZlqDHuo
+void setup() {
+  //programar el monitor serial
+  Serial.begin(9600);
+}
 
+void loop() {
+  int valor = analogRead(A0);//programar A0
+  float voltaje = valor * (5.0 / 1023.0) //Convertir el entero
+  Serial.println(voltaje);//Mostrar en pantalla
+  delay(1000);//pausa por 1000mls
+}
