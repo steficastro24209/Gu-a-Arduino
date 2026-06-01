@@ -1,1 +1,18 @@
+//Punto 9
+//https://www.youtube.com/watch?v=samCk8vcl3A
+int leds[] = {10, 9, 8, 7, 6, 5, 4};
+int numLeds = 7;
+int delayTime = 700;
+int direction = 1;
+int currentLed = 0;
 
+void setup() { for (int i = 0; i < numLeds; i++) { //Configurar Leds
+  pinMode(leds[i], OUTPUT); } }
+
+void loop() {
+  digitalWrite(leds[currentLed], HIGH);//Encender Leds
+  delay(delayTime);
+  digitalWrite(leds[currentLed], LOW);//Apagar Leds
+  currentLed += direction;
+  if (currentLed >= numLeds - 1 || currentLed <= 0) { direction *= -1; }//Variables convertirlas
+}
