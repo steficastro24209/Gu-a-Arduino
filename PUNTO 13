@@ -1,1 +1,26 @@
+//Punto 13
+int enablePin = 6;//Programar pines 
+int in1 = 5;
+int in2 = 4;
 
+void setup() {
+  //Configurar Leds
+  pinMode(enablePin, OUTPUT);
+  pinMode(in1, OUTPUT);
+  pinMode(in2, OUTPUT);
+
+  digitalWrite(in1, HIGH);//EEncendido
+  digitalWrite(in2, LOW);//Apagado
+}
+
+void loop() {
+
+  analogWrite(enablePin, 80);//Tiempo
+  delay(2000);
+
+  analogWrite(enablePin, 150);
+  delay(2000);
+
+  analogWrite(enablePin, 255);
+  delay(2000);
+}
