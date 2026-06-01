@@ -1,1 +1,21 @@
+//Punto 7
+//https://www.youtube.com/watch?v=1ALB8iRr8tQ
+int potPin = A0; 
+void setup() {
+  //Programamos el monitor serial
+  Serial.begin(9600);
+  Serial.println("Lectura del Potenciómetro");//Imprimir en pantalla
+}
 
+void loop() {
+  int potValue = analogRead(potPin); 
+  float voltage = (potValue * 5.0) / 1023.0;//Convierte el valor entero
+
+  Serial.print("Valor Analógico: ");//Imprimir en pantalla
+  Serial.print(potValue);
+  Serial.print(" | Voltaje: ");//Imprimir el valor 
+  Serial.print(voltage);
+  Serial.println(" V");
+
+  delay(100); //pausa por 100mls
+}
