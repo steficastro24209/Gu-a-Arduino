@@ -1,28 +1,28 @@
 //Punto 3//
-//https://www.youtube.com/watch?v=mNXHL4bdlQQ//
-int rojo = 13;//Rojo conectar al pin 13//
-int amarillo = 12;//Amarillo conevatr al pin 12//
-int verde = 11;//Verde conevtar al pin 11//
+//https://www.youtube.com/watch?v=mNXHL4bdlQQ
+int rojo = 13;//Rojo conectar al pin 13
+int amarillo = 12;//Amarillo conevatr al pin 12
+int verde = 11;//Verde conevtar al pin 11
 
 void setup() {
-  //Configurar los pines//
+  //Configurar los pines
   pinMode(rojo, OUTPUT);
   pinMode(amarillo, OUTPUT);
   pinMode(verde, OUTPUT);
 }
 
 void loop() {
-  // Progrmar Led Rojo//
+  // Progrmar Led Rojo
   digitalWrite(rojo, HIGH);
   delay(3000);
   digitalWrite(rojo, LOW);
 
-  // Programar Led Amarillo//
+  // Programar Led Amarillo
   digitalWrite(amarillo, HIGH);
   delay(1000);
   digitalWrite(amarillo, LOW);
 
-  // Programar Led Verde//
+  // Programar Led Verde
   digitalWrite(verde, HIGH);
   delay(3000);
   digitalWrite(verde, LOW);
