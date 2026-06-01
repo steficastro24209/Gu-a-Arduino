@@ -1,1 +1,20 @@
+//punto 5
+//https://www.youtube.com/shorts/fw4-GYTpKdw
+int ledPin =6;//Led al pin 6
+int duration=3000;
+int brightnessLevels[] = {0,128,225};
 
+void setup(){
+  //Configurar el pin
+pinMode(ledPin,OUTPUT);
+}
+
+void loop(){
+for(int i=0; i<3; i++){//Recorre las 3 pociciones 
+int brightness=brightnessLevels[i];
+analogWrite(ledPin,brightness);
+delay(duration/3); 
+}
+analogWrite(ledPin,0);
+delay(1000);
+}
