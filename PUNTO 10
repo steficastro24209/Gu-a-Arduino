@@ -1,1 +1,35 @@
+//Punto 10
+//https://www.youtube.com/watch?v=KA4fXwjFuqA
+int greenPin=13;
+int bluePin=12;
+int redPin=11;
+String ledColor;
+String msg1="escribe un color de led";
+void setup() {
+  Serial.begin(115200);
+  //Programar los pines
+  pinMode(greenPin,OUTPUT);
+  pinMode(bluePin,OUTPUT);
+  pinMode(redPin,OUTPUT);
 
+
+}
+
+void loop() {
+  ledColor=Serial.readString();
+  if (ledColor=="verde"||ledColor=="VERDE"){//Programar Led Verde
+    digitalWrite(greenPin,HIGH);
+   if (ledColor=="apagar"||ledColor=="apagar")
+    digitalWrite(greenPin,LOW);
+  }
+  if (ledColor=="azul"||ledColor=="AZUL"){ //Programar Azul
+    digitalWrite(bluePin,HIGH);
+    digitalWrite(bluePin,LOW);
+  }
+  if (ledColor=="rojo"||ledColor=="ROJO"){ //Programar Led Rojo
+    digitalWrite(redPin,HIGH);
+    digitalWrite(redPin,LOW);
+  }
+ 
+
+}
