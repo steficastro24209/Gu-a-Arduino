@@ -15,37 +15,37 @@ void setup() {
 
 void loop() {
 
-  digitalWrite(L1,LOW),digitalWrite(L2,LOW),digitalWrite(L3,LOW),digitalWrite(L4,LOW);//0000
+  digitalWrite(L1,LOW),digitalWrite(L2,LOW),digitalWrite(L3,LOW),digitalWrite(L4,LOW);//Decimal (0)0000
   delay(1000);
-  digitalWrite(L1,LOW),digitalWrite(L2,LOW),digitalWrite(L3,LOW),digitalWrite(L4,HIGH);//0001
+  digitalWrite(L1,LOW),digitalWrite(L2,LOW),digitalWrite(L3,LOW),digitalWrite(L4,HIGH);//Decimal(1)0001
   delay(1000);
-  digitalWrite(L1,LOW),digitalWrite(L2,LOW),digitalWrite(L4,LOW),digitalWrite(L3,HIGH);//0010
+  digitalWrite(L1,LOW),digitalWrite(L2,LOW),digitalWrite(L4,LOW),digitalWrite(L3,HIGH);//Decimal (2)0010
   delay(1000);
-  digitalWrite(L1,LOW),digitalWrite(L2,LOW),digitalWrite(L3,LOW),digitalWrite(L4,HIGH);//0011
+  digitalWrite(L1,LOW),digitalWrite(L2,LOW),digitalWrite(L3,LOW),digitalWrite(L4,HIGH);//Decimal (3)0011
   delay(1000);
-  digitalWrite(L1,LOW),digitalWrite(L3,LOW),digitalWrite(L4,LOW),digitalWrite(L2,HIGH);//0100
+  digitalWrite(L1,LOW),digitalWrite(L3,LOW),digitalWrite(L4,LOW),digitalWrite(L2,HIGH);//Decimal (4)0100
   delay(1000);
-  digitalWrite(L1,LOW),digitalWrite(L3,LOW),digitalWrite(L2,HIGH),digitalWrite(L4,HIGH);//0101
+  digitalWrite(L1,LOW),digitalWrite(L3,LOW),digitalWrite(L2,HIGH),digitalWrite(L4,HIGH);//Decimal (5)0101
   delay(1000);
-  digitalWrite(L1,LOW),digitalWrite(L4,LOW),digitalWrite(L2,HIGH),digitalWrite(L3,HIGH);//0110
+  digitalWrite(L1,LOW),digitalWrite(L4,LOW),digitalWrite(L2,HIGH),digitalWrite(L3,HIGH);//Decimal (6)0110
   delay(1000);
-  digitalWrite(L1,LOW),digitalWrite(L2,HIGH),digitalWrite(L3,HIGH),digitalWrite(L4,HIGH);//0111
+  digitalWrite(L1,LOW),digitalWrite(L2,HIGH),digitalWrite(L3,HIGH),digitalWrite(L4,HIGH);//Decimal (7)0111
   delay(1000);
-  digitalWrite(L2,LOW),digitalWrite(L3,LOW),digitalWrite(L1,LOW),digitalWrite(L1,HIGH);//1000
+  digitalWrite(L2,LOW),digitalWrite(L3,LOW),digitalWrite(L1,LOW),digitalWrite(L1,HIGH);//Decimal (8)1000
   delay(1000);
-  digitalWrite(L2,LOW),digitalWrite(L3,LOW),digitalWrite(L1,HIGH),digitalWrite(L4,HIGH);//1001
+  digitalWrite(L2,LOW),digitalWrite(L3,LOW),digitalWrite(L1,HIGH),digitalWrite(L4,HIGH);//Decimal (9)1001
   delay(1000);
-  digitalWrite(L2,LOW),digitalWrite(L4,LOW),digitalWrite(L1,HIGH),digitalWrite(L3,HIGH);//1010
+  digitalWrite(L2,LOW),digitalWrite(L4,LOW),digitalWrite(L1,HIGH),digitalWrite(L3,HIGH);//Decimal (10)1010
   delay(1000);
-  digitalWrite(L2,LOW),digitalWrite(L1,HIGH),digitalWrite(L3,HIGH),digitalWrite(L4,HIGH);//1011
+  digitalWrite(L2,LOW),digitalWrite(L1,HIGH),digitalWrite(L3,HIGH),digitalWrite(L4,HIGH);//Decimal(11)1011
   delay(1000);
-  digitalWrite(L3,LOW),digitalWrite(L4,LOW),digitalWrite(L1,HIGH),digitalWrite(L2,HIGH);//1100
+  digitalWrite(L3,LOW),digitalWrite(L4,LOW),digitalWrite(L1,HIGH),digitalWrite(L2,HIGH);//Decimal(12)1100
   delay(1000);
-  digitalWrite(L3,LOW),digitalWrite(L1,HIGH),digitalWrite(L2,HIGH),digitalWrite(L4,HIGH);//1101  
+  digitalWrite(L3,LOW),digitalWrite(L1,HIGH),digitalWrite(L2,HIGH),digitalWrite(L4,HIGH);//Decimal(13)1101  
   delay(1000);
-  digitalWrite(L4,LOW),digitalWrite(L1,HIGH),digitalWrite(L2,HIGH),digitalWrite(L3,HIGH);//1110
+  digitalWrite(L4,LOW),digitalWrite(L1,HIGH),digitalWrite(L2,HIGH),digitalWrite(L3,HIGH);//Decimal (14)1110
   delay(1000);
-  digitalWrite(L1,HIGH),digitalWrite(L2,HIGH),digitalWrite(L3,HIGH),digitalWrite(L4,HIGH);//1111
+  digitalWrite(L1,HIGH),digitalWrite(L2,HIGH),digitalWrite(L3,HIGH),digitalWrite(L4,HIGH);//Decimal(15)1111
   delay(1000);
 
 }
