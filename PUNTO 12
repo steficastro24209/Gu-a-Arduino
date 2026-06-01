@@ -1,1 +1,34 @@
+//Punto 12
+//https://www.youtube.com/watch?v=YOPQbGYbe2Q
+#include <Servo.h>
 
+Servo miServo;
+
+int ldr = A0;
+int valorLuz;
+
+void setup() {
+  miServo.attach(9);
+  Serial.begin(9600);
+}
+
+void loop() {
+
+  valorLuz = analogRead(ldr);//Lee la cantidad de lez
+
+  Serial.println(valorLuz);//Muestra en pantalla
+
+  if (valorLuz < 300) {
+    miServo.write(0);
+  }
+
+  else if (valorLuz >= 300 && valorLuz < 700) {
+    miServo.write(90);
+  }
+
+  else {
+    miServo.write(180);//Pocicion final 180grados
+  }
+
+  delay(500);
+}
